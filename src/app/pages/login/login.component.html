@@ -1,0 +1,28 @@
+<div class="box-form" [formGroup]="reactiveform" (ngSubmit)="onSubmit()">
+	<div class="left">
+		<div class="overlay">
+		<h1>Welcome Back!</h1>
+		<p>Sign in to access with your existing account.</p>
+		</div>
+	</div>
+	
+	
+		<div class="right">
+		<h5>Login</h5>
+		<p>Don't have an account? <a href="app-sign-up">Sign Up</a></p>
+		<div class="inputs">
+			<input type="text" placeholder="Email" formControlName="email">
+			<br>
+			<input type="password" placeholder="Password" formControlName="password">
+		</div>
+			
+			<br><br>
+			
+	
+			<br>
+			<a href="app-home">
+			<button type="submit" value="Submit">Login</button>
+			</a>	
+	</div>
+	
+</div>

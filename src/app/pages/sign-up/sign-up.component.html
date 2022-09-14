@@ -1,0 +1,37 @@
+<div class="box-form" [formGroup]="reactiveform" (ngSubmit)="onSubmit()">
+	<div class="left">
+		<div class="overlay">
+		<h1>Register Now!</h1>
+		<p>Create your account.</p>
+		</div>
+	</div>
+	
+	
+		<div class="right">
+		<h5>Sign Up</h5>
+		<p>Already have an account? <a href="app-login">Login Here</a></p>
+		<div class="inputs">
+			<input type="text" placeholder="First Name" formControlName="fName">
+			<br>
+			<input type="text" placeholder="Last Name" formControlName="lName">
+			<br>
+			<input type="text" placeholder="Email" formControlName="email">
+			<br>
+			<input type="password" placeholder="Password" formControlName="password">
+			<br><br>
+			<select formControlName="select">
+				<option value="Admin">Admin</option>
+				<option value="User">User</option>
+			  </select>
+		</div>
+			
+			<br><br>
+			
+	
+			<br>
+			<a href="app-login">
+			<button type="submit" value="Submit">Sign Up</button>
+	</a>
+	</div>
+	
+</div>
