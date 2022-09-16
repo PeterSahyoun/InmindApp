@@ -13,6 +13,8 @@ import { SignUpComponent } from './pages/sign-up/sign-up.component';
 import { CountryCardComponent } from './components/country-card/country-card.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
+import { StoreModule } from '@ngrx/store';
+import { TranslocoRootModule } from './transloco-root.module';
 
 
 
@@ -35,7 +37,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    TranslocoRootModule,
+    StoreModule.forRoot({}, {})
   ],
   providers: [],
   bootstrap: [AppComponent]

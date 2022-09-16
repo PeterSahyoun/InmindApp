@@ -1,6 +1,6 @@
 <div
   *ngIf="country"
-  [routerLink]="'/' + country.name.common"
+  [routerLink]="['/details/', country.name.common]"
   class="country-card shadow"
 >
   <div class="country-card-img">
