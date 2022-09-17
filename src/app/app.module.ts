@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { StoreModule } from '@ngrx/store';
 import { TranslocoRootModule } from './transloco-root.module';
+import { EffectsModule } from '@ngrx/effects';
 
 
 
@@ -39,7 +40,8 @@ import { TranslocoRootModule } from './transloco-root.module';
     FormsModule,
     ReactiveFormsModule,
     TranslocoRootModule,
-    StoreModule.forRoot({}, {})
+    StoreModule.forRoot({}, {}),
+    EffectsModule.forRoot([])
   ],
   providers: [],
   bootstrap: [AppComponent]
